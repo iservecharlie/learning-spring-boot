@@ -9,6 +9,11 @@ pipeline {
             steps {
                 sh 'mvn clean package -DskipTests'
             }
+            post {
+                success {
+                    junit 'target/surefire-reports/**/*.xml' 
+                }
+            }
         }
         stage('Test') {
             steps {
