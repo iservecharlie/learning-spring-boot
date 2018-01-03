@@ -5,14 +5,14 @@ pipeline {
         jdk "Java 8"
     }
     stages {
+        stage('Clean') {
+            steps {
+                sh 'mvn clean'
+            }
+        }
         stage('Build') {
             steps {
-                sh 'mvn clean package -DskipTests'
-            }
-            post {
-                success {
-                    junit 'target/surefire-reports/**/*.xml' 
-                }
+                sh 'mvn package -DskipTests'
             }
         }
         stage('Test') {
