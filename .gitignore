@@ -1,5 +1,8 @@
 /.idea/**
-/spring-heroku-tset.iml
-/src/main/webapp/node_modules
-/src/main/webapp/static
-/src/main/webapp/npm-debug.log
+/src/main/resources/etc
+/src/main/resources/node_modules
+/src/main/resources/node
+/src/main/resources/static
+/src/main/resources/npm-debug.log
+/src/main/resources/package-lock.json
+/learning-spring.iml

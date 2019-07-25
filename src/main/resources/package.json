@@ -2,8 +2,10 @@
   "title": "Templating For Projects",
   "name": "templating-for-projects",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
-    "start": "node_modules/.bin/gulp watch"
+    "start": "./node_modules/.bin/gulp watch",
+    "build": "./node_modules/.bin/gulp build"
   },
   "description": "Creates a dev env for templating/designing projects.",
   "keywords": [
