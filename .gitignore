@@ -1,2 +1,5 @@
 /.idea/**
 /spring-heroku-tset.iml
+/src/main/webapp/node_modules
+/src/main/webapp/static
+/src/main/webapp/npm-debug.log
